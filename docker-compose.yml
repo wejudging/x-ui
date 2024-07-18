@@ -1,0 +1,8 @@
+services:
+  x-ui:
+    image: enwaiax/x-ui:latest
+    container_name: x-ui
+    volumes:
+      - ./db/:/etc/x-ui/
+    network_mode: host
+    restart: unless-stopped
